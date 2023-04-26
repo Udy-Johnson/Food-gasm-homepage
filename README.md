@@ -6,7 +6,7 @@ This is a recipe website created by a frontend developers using HTML, CSS, and J
 
 - Search for recipes by keyword
 - View recipe details, including ingredients, preparation instructions, and nutritional information
-- Check out our [Home page](Homepage.html) for more information.
+- Check out our [Home page](index.html) for more information.
 
 ## Technologies Used
 
