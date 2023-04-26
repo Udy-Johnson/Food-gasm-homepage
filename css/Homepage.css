@@ -88,6 +88,10 @@ p {
     height: 350px;
 }
 
+.popular-recipes {
+height: 500px;
+}
+
 footer {
     display: flex;
     /* allows use of "justify-content" property */
