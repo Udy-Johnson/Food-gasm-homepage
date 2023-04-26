@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- this scales the content to display nicely on mobiles/tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The Foodgasm Blogspot!</title>
+
+    <!-- Bootstrap and FontAwesome cdn links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- our custom styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- ==== NAV BAR (BOOTSTRAP) ===== -->
+    <!-- use the "fixed-top" bootstrap class to fix the nav bar to the top of page.
+         BUT, remember to add enough padding to the top of the <body> -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="./index.html">THE FOODGASM BLOGSPOT!</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="homepage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="loginpage.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ==== END NAV BAR ===== -->
+
+    <main>
+
+        <!-- ==== carousel section (BOOTSTRAP) ==== -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/jamaican-jerk-chicken1-1662431390.jpg" class="d-block w-100" alt="cloudy conifers landscape">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/crawfish_bao_1.19.jpg" class="d-block w-100" alt="lavendar landscape">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Efo-riro.-Photo-IQFoodPlatter.jpg" class="d-block w-100" alt="nat geo epic lanscape">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- ==== END carousel section ==== -->
+
+        <!-- ==== secondary nav bar ==== -->
+        <div id="second-navbar">
+            <!-- you can specify the id of an element in the href. clicking the link will then take you to that element -->
+            <a class="btn" href="#meet-the-team" role="button">Receipes</a>
+            <a class="btn" href="#section-1" role="button">Cooking Tutorials</a>
+            <a class="btn" href="#section-2" role="button">Desserts</a>
+            <a class="btn" href="#section-3" role="button">Vegan Dishes</a>
+        </div>
+
+        <!-- ==== linking button to another page demo ==== -->
+        <div class="container">
+            <h2>Most popular receipes of the week!</h2>
+            <!-- in the href, specify the link to the page you want to navigate to -->
+            <a class="btn btn-primary" href="https://www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries?utm_campaign=11198263433&utm_medium=cpc&storeId=10151&gclid=CjwKCAjw0ZiiBhBKEiwA4PT9z7e_ofFlE3rLcdVRJ98fK60znWoC3khyzgLrvUlgKWPayF_7iDkmHBoCwgUQAvD_BwE&langId=44&utm_source=Google&krypto=KKoPTTqU6N85xeQfrFQZtH9XH21Ate41W11F362JAECJH9wa5KHqcnv4dXptA36Ga4K2pastzGql6%2FSkb7QUF4mxuq9r2IdCj%2FSHyaG3Mztg3GJFcQZFKJnk2%2Fbh4hhVnYeELNPGfQyFaj2qHvf3yrdoU7fQr8ZX8FzkjaL30Rj%2BsIRkikBVm2M99kjMM5DqBALzfcERZQFV1HfgzFXbuqtJKYOjeV6aP4VBiJDgMHwup9W1%2FmyIyX3qeRLTZtKTrS5wpOdQkYL1NYDIHLn3Aht1qBtwYSXOkvz2Tjw5eUv5VXNXHLX5VqgsOxdssD0%2F&ddkey=https%3Agb%2Fgroceries"
+                role="button">click to add ingredients to shopping list</a>
+            <!-- the bootstrap classes "btn btn-primary" make the <a> element look like a button -->
+        </div>
+
+        <hr/>
+
+        <!-- ==== photograph grid ==== -->
+        <div class="container" id="meet-the-team">
+            <h2>Receipes</h2>
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <!-- you can wrap the <img> within an <a> tag, this turns the img into a link -->
+                    <a href="https://www.jocooks.com/recipes/easy-beef-and-broccoli-stir-fry/" target="_blank">
+                        <img src="images/Beef-and-Broccoli-square-FS.jpg" alt="Beef & Broccoli Stir-fry" />
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <a href="https://www.bbcgoodfood.com/recipes/best-spaghetti-bolognese-recipe" target="_blank">
+                        <img src="images/Authentic-Spaghetti-Bolognese-SQ.jpg" alt="Spaghetti" />
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <a href="https://www.dinneratthezoo.com/garlic-butter-shrimp/" target="_blank">
+                        <img src="images/Lemon-Garlic-Butter-Shrimp-sq.jpg" alt="shrimp" />
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <a href="https://www.foodandwine.com/recipes/jamaican-jerk-chicken" target="_blank">
+                        <img src="images/jerky.jpeg" alt="jerk" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <a href="https://tastesbetterfromscratch.com/paella/" target="_blank">
+                        <img src="images/Recipe-Seafood-Paella.jpg" alt="paella" />
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <a href="https://www.recipetineats.com/chicken-sharwama-middle-eastern/" target="_blank">
+                        <img src="images/Easy-Shawarma-Chicken-Recipe22-500x500.webp" alt="shwarma" />
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <a href="https://my.whisk.com/recipes/107efa00bb2b1bb4ea18402ca3371b5736c" target="_blank">
+                        <img src="images/The-Ultimate-Mediterranean-Bowl-SQUARE.jpg" alt="salad" />
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <a href="https://www.midwestliving.com/recipe/flat-iron-with-chimichurri-and-smashed-potatoes/" target="_blank">
+                        <img src="images/flat-iron-chimichurri-smashed-potatoes-RU340466.jpg" alt="burger" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- ==== END photograph grid ==== -->
+
+        <hr/>
+
+        <!-- ==== three sections of filler text (generated from https://hipsum.co/) ==== -->
+        <div class="container" id="section-1">
+            <h2>Cooking Tutorials</h2>
+            <p>
+                Learn how to cook with step-by-step guides from the Taste of Culture Kitchen. Our experts will walk you through the techniques you need to master must-try dishes and desserts.
+            </p>
+            <p>
+                This recipe for beef and broccoli stir fry is a classic dish of beef sauteed with fresh broccoli florets and coated in a savory sauce. You can have a healthy and easy dinner on the table in less than 30 minutes! I love stir fries for a quick meal thats
+                full of flavor. Some of my favorites include honey garlic chicken stir fry, teriyaki shrimp, and this delicious beef broccoli. <br>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8eITNSfct3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </br>
+            </p>
+            <p> <a href="https://www.youtube.com/watch?v=zhI7bQyTmHw">click the link to visit our youtube cook-a-long classes</a></p>
+        </div>
+
+        <hr/>
+
+        <div class="container" id="section-2">
+            <h2>Desserts</h2>
+            <p>
+                Theres nothing like the joy that comes from ending your meal with a sweet, homemade dessert. They make any occasion feel extra-special, from birthdays to anniversaries to potlucks and everyday dinners. But what if you're, ahem, not super confident in
+                the kitchen? Fear not, these desserts look like a professional made them, but are actually so easy to put together! From cakes to bars to pies and even dessert dips, you'll be able to master these recipes in no time. What makes these recipes
+                so easy, you may ask? We've included many desserts that are ready in under an hour (some even in 10 minutes!), so you're not slaving away in the kitchen prepping a towering dessert all day long. Our no-bake desserts couldn't be easier
+                to prep ahead of time, with the majority of their time spent chillin' in the fridge 'til you're ready to serve. Of course, we didn't forget one of our favorite easy desserts: poke cakes. If you're unfamiliar, it's all in the name—theyre
+                baked, poked, then filled with a sweet syrup or milk to add extra flavor. Basically, they're foolproof delicious and a super way to impress without all the fuss of a layer cake. With these recipes, we've found plenty of ways to create
+                stunning-looking desserts without any finesse, from simple marbling to fruit toppings that don't need anything else for a stunning finish (well, some whipped cream never hurt). Want more dessert recipes? Check out our list of easy fruit
+                desserts for when you're looking for something fresh and fruity. Need more chocolate in your life? Peruse our list of chocolate desserts too.
+            </p>
+            <p>
+                <a href="https://thefeedfeed.com/thefeedfeed/flourless-chocolate-cake-with-dark-chocolate-ganache-and-flaky-salt" target="_blank">
+                    <img src="images/salty-flourless-chocolate-cake-1648585546.jpeg" alt="cake" width="250" height="250" />
+                </a>
+                <a href="https://www.bbcgoodfood.com/recipes/collection/chocolate-cheesecake-recipes" target="_blank">
+                    <img src="images/img17699.jpg" alt="cake" width="250" height="250" />
+                </a>
+                <a href="https://www.delish.com/cooking/recipe-ideas/a39574102/key-lime-pie-mousse-recipe/" target="_blank">
+                    <img src="images/key-lime-pie-mousse-5-1649370548.jpg" alt="cake" width="250" height="250" />
+                </a>
+                <a href="https://www.bbc.co.uk/food/recipes/no-bake_strawberry_30276" target="_blank">
+                    <img src="images/strwberry.jpeg" alt="cake" width="250" height="250" />
+                </a>
+            </p>
+
+        </div>
+
+        <hr/>
+
+        <div class="container" id="section-3">
+            <h2>Vegan Dishes</h2>
+            <p>
+                Here is a collection of our very Best Vegan Recipes. Whether you are simply trying to eat less meat, cook more plant-based meals, consume more vibrant healthy produce, or subscribe to the vegan lifestyle, I hope these vegan meals will inspire you on your
+                health journey, wherever that leads. As it turns out, we have about 100 vegan recipes (or vegan-adaptable recipes) on the blog, which surprised me because that is about half of our recipes! We sorted through all our readers' favorites
+                and featured the “tried and true” recipes here. <a href="https://www.bbcgoodfood.com/recipes/collection/vegan-recipes">View our entire collection of  Vegan Recipes to see more!</a>
+            </p>
+            <p>
+                <img src="images/vegan.jpeg" alt="vegan" width="250" height="250" />
+                <img src="images/vegandishes.jpeg" alt="cake" width="250" height="250" />
+                <img src="images/blueberry.jpeg" alt="cake" width="250" height="250" />
+                <img src="images/how-to-make-crispy-tofu-featured-3.jpg" alt="cake" width="250" height="250" />
+            </p>
+        </div>
+        <!-- ==== END three sections of filler text ==== -->
+    </main>
+
+    <footer>
+        <!-- ==== social icons ==== -->
+        <a href="https://twitter.com" target="_blank">
+            <span class='social-icon'><i class="fab fa-twitter"></i></span>
+        </a>
+        <a href="https://facebook.com" target="_blank">
+            <span class='social-icon'><i class="fab fa-facebook-f"></i></span>
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <span class='social-icon'><i class="fab fa-instagram"></i></span>
+        </a>
+    </footer>
+
+    <!-- ==== button that scrolls window to the top ==== -->
+    <button class="btn btn-primary" onclick="topFunction()" id="go-top-button" title="Go to top">Top</button>
+
+    <!-- Bootstrap needs the these 3 javascript links for things like carousel and modals to work properly.
+         we also need jQuery for the code for the "scroll to the top" code in scripts.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- our custom javascript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
