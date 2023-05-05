@@ -37,7 +37,179 @@ html, body{
   height: 4px;
   width: 33px;
   left: 0px;
-  bottom: 3px;
+  bottom: 3px;@import url('https://fonts.googleapis.com/css?family=Montserrat:600%7CNoto+Sans%7COpen+Sans:400,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+#second-navbar {
+    background-color: #dde;
+    display: flex;
+    /* unlocks "flex" property for its children (<a> tags) */
+}
+
+#second-navbar a {
+    height: 50px;
+    flex: 1;
+    /* all of these <a> elements will "grow" an equal amount (so they all have an equal width) */
+    display: flex;
+    /* allows use of "justify-content" and "align-items" properties */
+    justify-content: center;
+    /* horizontally centers the contents (the text within) */
+    align-items: center;
+    /* vertically centers the contents (the text within) */
+}
+
+#second-navbar a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    /* change color when hover over the link */
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+.container{
+  position: relative;
+  width: 400px;
+  background: white;
+  padding: 60px 40px;
+}
+header{
+  font-size: 40px;
+  margin-bottom: 60px;
+  font-family: 'Montserrat', sans-serif;
+}
+.input-field, form .button{
+  margin: 25px 0;
+  position: relative;
+  height: 50px;
+  width: 100%;
+}
+.input-field input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid silver;
+  padding-left: 15px;
+  outline: none;
+  font-size: 19px;
+  transition: .4s;
+}
+input:focus{
+  border: 1px solid #1DA1F2;
+}
+.input-field label, span.show{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.input-field label{
+  left: 15px;
+  pointer-events: none;
+  color: grey;
+  font-size: 18px;
+  transition: .4s;
+}
+span.show{
+  right: 20px;
+  color: #111;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  visibility: hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+input:valid ~ span.show{
+  visibility: visible;
+}
+input:focus ~ label,
+input:valid ~ label{
+  transform: translateY(-33px);
+  background: white;
+  font-size: 16px;
+  color: #1DA1F2;
+}
+form .button{
+  margin-top: 30px;
+  overflow: hidden;
+  z-index: 111;
+}
+.button .inner{
+  position: absolute;
+  height: 100%;
+  width: 300%;
+  left: -100%;
+  z-index: -1;
+  transition: all .4s;
+  background: -webkit-linear-gradient(right,#00DBDE,#FC00FF,#00DBDE,#FC00FF);
+}
+.button:hover .inner{
+  left: 0;
+}
+.button button{
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+.container .option{
+  margin: 35px 0 20px 0;
+  font-size: 19px;
+  color: grey;
+  text-align: center;
+}
+.links{
+  display: flex;
+  cursor: pointer;
+}
+.container .facebook a,
+.container .twitter a{
+  display: block;
+  height: 45px;
+  width: 100%;
+  font-size: 15px;
+  text-decoration: none;
+  padding-left: 20px;
+  line-height: 45px;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.container .facebook i,
+.container .twitter i{
+  padding-right: 12px;
+  font-size: 20px;
+}
+.container .twitter a{
+  background: linear-gradient(to right,  #00ACEE 0%, #1ABEFF 100%);
+  margin: 20px 0 15px 0;
+}
+.container .twitter a:hover{
+  background: linear-gradient(to left,  #00ACEE 0%, #1ABEFF 100%);
+  margin: 20px 0 15px 0;
+}
+.container .facebook a{
+  background: linear-gradient( to right,  #3B5998 0%, #476BB8 100%);
+  margin: 20px 0 50px 0;
+}
+.container .facebook a:hover{
+  background: linear-gradient( to left,  #3B5998 0%, #476BB8 100%);
+  margin: 20px 0 50px 0;
+}
   border-radius: 5px;
   background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
 }
